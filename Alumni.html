@@ -31,7 +31,18 @@
 		.vjs-default-skin .vjs-control-bar {
 			font-size: 60%
 		}
+		
 	</style>
+	<script>
+		 function loadHeader() {
+          fetch("header.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("header-placeholder").innerHTML = data;
+            });
+        }
+        document.addEventListener("DOMContentLoaded", loadHeader);
+	</script>
 </head>
 
 <body>
@@ -39,124 +50,7 @@
 	<div style="z-index:100; position:absolute;top:0;left:0; width:100%;">
 		<div class="container-fluid" style="padding-left:10px;padding-right:10px;">
 			<!-- header -->
-			<div id="" class="row-fluid">
-				<div id="" class="span10 offset1 title visible-desktop">
-					<table style="
-					background-position:80% 70%;background-repeat:no-repeat;">
-						<tr style="">
-							<td style="width:15%;"> <img style="margin-left:30px;  -webkit-text-stroke: 2px red;"
-									style="width:80%;" src="img/LF%20EMB%20copy.png" border="0" alt="">
-							</td>
-							<td style="width:100%; 
-					">
-								<center>
-									<p style="margin-left:15px;">THE LITTLE FLOWER HIGHER SECONDARY SCHOOL</p>
-								</center>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div id="" class="row-fluid">
-				<div id="" class="span10 offset1 visible-phone title_phone">
-					<center><img src="img/LF%20EMB%20copy.png" width="50%" border="0" alt=""></center>
-					<center>
-						<p>Lead Kindly Light </p>
-					</center>
-					<h6>THE LITTLE FLOWER HIGHER SECONDARY SCHOOL</h6>
-				</div>
-			</div>
-			<div id="" class="row-fluid">
-				<div id="" class="span10 offset1 visible-desktop">
-					<div id="" class="">
-						<ul class=" menu">
-							<li><a href="index.html" title="Home">Home</a></li>
-							<li><a href="about.html" title="About">About</a></li>
-							<li><a href="history.html" title="About">Honours</a></li>
-							<li><a href="gallery.html" title="Gallery">Gallery</a></li>
-							<li><a href="NewsEvent.html" title="Gallery">News & Event</a></li>
-							<li><a href="Alumni.html" title="Alumni">Alumni</a></li>
-							<li><a href="achievements.html" title="Achievements">Achievements</a></li>
-							<li><a href="contact.html" title="Contact">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span10 offset1 visible-phone" style="">
-					<div class="navbar">
-						<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</a>
-						<div class="nav-collapse collapse navbar-responsive-collapse">
-							<ul class="nav" style="margin:10px 5px;">
-								<li><a href="index.html" title="Home">Home</a></li>
-								<li><a href="about.html" title="About">About</a></li>
-								<li><a href="history.html" title="About">Honours</a></li>
-								<li><a href="gallery.html" title="Gallery">Gallery</a></li>
-								<li><a href="NewsEvent.html" title="Gallery">News & Event</a></li>
-								<li><a href="Alumni.html" title="Alumni">Alumni</a></li>
-								<li><a href="achievements.html" title="Achievements">Achievements</a></li>
-								<li><a href="contact.html" title="Contact">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="" class="row-fluid">
-				<div id="" class="span10 offset1 ">
-					<div id="" class="marquee_area">
-						<marquee>
-							<h4>
-								<center>hostel facility available</center>
-							</h4>
-						</marquee>
-					</div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span10 content_title offset1" align="center">
-					<div id="myCarousel" class="carousel slide">
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>
-						<!-- Carousel items -->
-						<div class="carousel-inner">
-							<div class="active item">
-								<img src="img/Slider/1 (1).jpg" border="0" alt="Header Image 1">
-								<!-- <div class="carousel-caption">
-						<p style="font-size:10px">2018-2019 ஆம் கல்வியாண்டில் சேலம் கல்வி மாவட்ட அளவிலான குடியரசு தின பாரதியார் தின கால்பந்தாட்டப் போட்டிகளில் சேலம் அளவில் சிறுமலர் மேல்நிலைப் பள்ளி மாணவர்கள் மூத்தோர் மற்றும் மேல்மூத்தோர்  பிரிவில் வெற்றி பெற்று சேலம் மண்டல அளவிலான போட்டிக்கு தேர்வு செய்ய்யபட்டுள்ளனர். .<a href="pdf/football.pdf" style="color:#3498DB;">மேலும் படிக்க </a> </p>
-					</div>	 -->
-							</div>
-							<div class=" item">
-								<img src="img/Slider/1 (2).jpg" border="0" alt="Header Image 1">
-								<!-- <div class="carousel-caption">
-						<p style="font-size:10px">2018 – 2019  ஆம் கல்வியாண்டில் சேலம் கல்வி மாவட்ட மத்திய மைய  அளவிலான குடியரசு தின தடகளபோட்டிகள்  அரசினர் மேல்நிலைப்பள்ளி அயோத்தியபட்டினத்தில் 27,28.08.2018 ல் நடைபெற்றது . இப்போட்டியில் மொத்தம் 118 புள்ளிகள் பெற்ற  சிறுமலர் மேல்நிலைப்பள்ளி மாணவர்களுக்கு ஒட்டு மொத்த சாம்பியன் பட்டம் வழங்கப்பட்டது .<a href="pdf/athelet_award.pdf" style="color:#3498DB;">மேலும் படிக்க </a> </p>
-					</div>	 -->
-							</div>
-							<div class="item"><img src="img/Slider/1 (3).jpg" border="0" alt="Header Image 1">
-							</div>
-							<div class="item"><img src="img/Slider/1 (4).jpg" border="0" alt="Header Image 1">
-							</div>
-							<div class="item"><img src="img/Slider/1 (5).jpg" border="0" alt="Header Image 1">
-							</div>
-							<div class="item"><img src="img/Slider/1 (6).jpg" border="0" alt="Header Image 1">
-							</div>
-							<div class="item"><img src="img/Slider/1 (7).jpg" border="0" alt="Header Image 1">
-							</div>
-							<div class="item"><img src="img/Slider/1 (8).jpg" border="0" alt="Header Image 1">
-							</div>
-						</div>
-						<!-- Carousel nav -->
-						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					</div>
-				</div>
-			</div>
+			<div id="header-placeholder"></div>
 			<!-- header -->
 			<div class="row-fluid">
 				<div class="span10 offset1 theme_bg_1 content_title"
@@ -336,7 +230,7 @@
 					<a href="index.html" id="foot_menu">Home</a><span class="divider">|</span>
 					<a href="about.html" id="foot_menu">About</a><span class="divider">|</span>
 					<a href="history.html" id="foot_menu">Honours</a><span class="divider">|</span>
-					<a href="gallery.html" id="foot_menu">Gallery</a><span class="divider">|</span>
+					<a href="albam.html" id="foot_menu">Gallery</a><span class="divider">|</span>
 					<a href="alumni.html" id="foot_menu">Alumni</a><span class="divider">|</span>
 					<a href="achievements.html" id="foot_menu">Achievements</a><span class="divider">|</span>
 					<a href="contact.html" id="foot_menu">Contact Us</a>
